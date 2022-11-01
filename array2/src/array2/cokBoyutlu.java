@@ -1,0 +1,40 @@
+package array2;
+
+import java.util.Arrays;
+
+public class cokBoyutlu {
+	public static void main(String[] args) {
+
+		int num[][] = new int[4][5];
+		num[0][0] = 4;
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 5; j++) {
+				num[i][j] = i;
+				System.out.println(num[i][j]);
+			}
+		}
+		String[] isim = { "Ayşe", "Mustafa", "Kerem" };
+		String[][] ogrenciler = new String[3][3];
+
+		for (int m = 0; m < 3; m++) {
+			for (int n = 0; n < 3; n++) {
+				ogrenciler[m][n] = isim[m];
+				System.out.print(m + " " + n + " ");
+				System.out.println(ogrenciler[m][n]);
+
+			}
+		}
+		System.out.println("/////////////////////////////");
+		String[][] personel = new String[2][2];
+		personel[0][0] = "Ayşe";
+		personel[0][1] = "Mehmet";
+		personel[1][0] = "Ela";
+		personel[1][1] = "Ece";
+		for (int d = 0; d < 2; d++) {
+			for (int k = 0; k < 2; k++) {
+				System.out.print(d + " " + k + " ");
+				System.out.println(personel[d][k]);
+			}
+		}
+	}
+}
