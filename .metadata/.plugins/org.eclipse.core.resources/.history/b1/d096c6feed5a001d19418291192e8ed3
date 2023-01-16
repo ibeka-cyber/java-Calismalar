@@ -1,0 +1,16 @@
+
+public class Operatorler {
+	public static void main(String[] args) {
+		int a=5;
+		int b=7;
+		
+		System.out.println("toplam: "+(a+b));
+		System.out.println("çıkarma: "+(a-b));
+		System.out.println("Bölme:"+(a/b));
+		System.out.println("Çarpma: "+(a*b));
+		System.out.println("mod: "+(a%b));
+		
+		int i=10; //bellekteki hali 00000000 00000000 00000000 00001010
+		System.out.println(~i);//~ yani not 0 gördüğü bitleri 1,1 leri 0 yapar.
+	}
+}

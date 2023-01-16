@@ -1,0 +1,13 @@
+package switchCase;
+
+import java.util.Scanner;
+
+public class switchCase {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("Aylarını öğrenmek istediğiniz mevsimi seçiniz: 1)İlkbahar \n 2)Yaz 3)Sonbahar \n 4)kış");
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package metotlar;
+
+import java.util.Arrays;
+
+public class MetotParametreleri3 {
+	public static void main(String[] args) {
+		
+
+		MetotParametreleri3 m = new MetotParametreleri3();
+		m.test(5);
+		m.Args(new int[] {4,5});
+	}
+
+	public void test(final int x) { //final sözcüğü yazıldıktan sonra alttaki x in altı kırmızı çizildi. yani olamaz dedi.
+		//x=10;
+		System.out.println(x);//final sözcüğü yazılmazsa metot xi 10 olarak değerlendirir ve yazdırır.
+		
+	}
+	
+	public void Args(int[] num) {
+		int x=num[0];
+		int y=num[0];
+		
+		System.out.println(x+y);
+	}
+}

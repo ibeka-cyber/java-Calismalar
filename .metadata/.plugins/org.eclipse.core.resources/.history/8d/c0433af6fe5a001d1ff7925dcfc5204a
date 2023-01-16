@@ -1,0 +1,30 @@
+package switchCase;
+
+import java.util.Scanner;
+
+public class switchCase {
+
+	public static void main(String[] args) {
+		int mevsim;
+ 		Scanner scan=new Scanner(System.in);
+		System.out.println("Aylarını öğrenmek istediğiniz mevsimi seçiniz: \n 1)İlkbahar \n 2)Yaz \n 3)Sonbahar \n 4)kış");
+		mevsim=scan.nextInt();
+		
+		switch(mevsim) {
+		case 1:
+			System.out.println("Mart,Nisan,Mayıs");
+			break;
+		case 2:
+			System.out.println("Haziran, Tammuz,Ağustos");
+			break;
+		case 3:
+			System.out.println("Eylül,Ekim,Kasım");
+			break;
+		case 4:
+			System.out.println("Aralık,Ocak,Şubat");
+			break;
+			
+		}
+	}
+
+}

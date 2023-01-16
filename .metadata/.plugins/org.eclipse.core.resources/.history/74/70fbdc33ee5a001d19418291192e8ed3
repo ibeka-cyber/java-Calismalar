@@ -1,0 +1,24 @@
+
+public class Operatorler {
+	public static void main(String[] args) {
+		int a=5;
+		int b=7;
+		
+		System.out.println("toplam: "+(a+b));
+		System.out.println("çıkarma: "+(a-b));
+		System.out.println("Bölme:"+(a/b));
+		System.out.println("Çarpma: "+(a*b));
+		System.out.println("mod: "+(a%b));
+		
+		int i=10; //bellekteki hali 00000000 00000000 00000000 00001010
+		int x=4;// bellekteki hali  00000000 00000000 00000000 00000100
+		
+		System.out.println(~i);//~ yani not 0 gördüğü bitleri 1,1 leri 0 yapar.
+		//sonucun -11 olmasının sebebi yukarıdaki en soldaki bit yani 32. bit 1 ise sayı negatif demektir.(2nin tümleyeninden)
+		
+		System.out.println(i&x);// end operatöründe sadece ikisi de 1 ise sonuç 1 olur. diğer ihtimallerde 0
+		
+		
+		
+	}
+}

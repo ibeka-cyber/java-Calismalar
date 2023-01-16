@@ -1,0 +1,27 @@
+package metotlar;
+
+import java.util.Scanner;
+
+public class MetotlarDevam2 {
+	public static String ad;
+	public static void merhaba(String ad) {
+		System.out.println("Merhaba "+ ad);
+	}
+	public void topla(int x, int y) {
+		System.out.println("Toplam "+ (x+y));
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("ad: ");
+		//ad değişkeni ve merhaba metodu static olduğu için nesne oluşturmadan erişilebildi.
+		ad=sc.nextLine();
+		MetotlarDevam2.merhaba(ad);
+		
+		
+		
+		
+		
+	}
+}

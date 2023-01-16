@@ -1,0 +1,18 @@
+package metotlar;
+
+public class MetotParametreleri {
+	public static void main(String[] args) {
+		int x=10;
+		System.out.println(x);
+		MetotParametreleri m = new MetotParametreleri();
+		m.passByValue(x);
+		System.out.println(x);
+		
+	}
+
+	public static void passByValue(int x) {
+		System.out.println("PBV: "+x);
+		x=20;
+		System.out.println("PBV: "+x);
+	}
+}

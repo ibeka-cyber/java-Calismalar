@@ -1,0 +1,8 @@
+package metotlar;
+
+public class Ogrenci {
+
+		public  String isim;
+		public  int yas;	
+
+}

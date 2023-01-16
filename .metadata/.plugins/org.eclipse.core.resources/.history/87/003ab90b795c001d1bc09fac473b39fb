@@ -1,0 +1,13 @@
+package metotlar;
+
+public class metotlar {
+	
+	public void Hello(){
+		System.out.println("Hello My Friend!");
+	}
+	public static void main(String[] args) {
+		metotlar m =new metotlar();
+	    m.Hello();
+	}
+
+}

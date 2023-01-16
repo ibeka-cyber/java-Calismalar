@@ -1,0 +1,8 @@
+package ifade;
+
+public class Kosul {
+	public static void main(String[] args) {
+		
+	}
+
+}

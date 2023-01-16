@@ -1,0 +1,17 @@
+package metotlar;
+
+public class metotlar {
+	
+	public void Hello(){
+		System.out.println("Hello My Friend!");
+	}
+	public void Topla(int x,int y) {
+		int sonuc = x+y;
+		System.out.println("Toplam sonucu: "+sonuc);
+	}
+	public static void main(String[] args) {
+	    new metotlar().Hello();
+	    new metotlar().Topla(5, 7);
+	}
+
+}

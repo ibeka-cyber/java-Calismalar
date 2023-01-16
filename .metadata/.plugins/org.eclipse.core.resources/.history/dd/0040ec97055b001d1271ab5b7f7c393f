@@ -1,0 +1,12 @@
+
+public class DoWhileDongusu {
+
+	public static void main(String[] args) {
+		int i=5;
+		do {
+			
+		}while(i==5);
+
+	}
+
+}

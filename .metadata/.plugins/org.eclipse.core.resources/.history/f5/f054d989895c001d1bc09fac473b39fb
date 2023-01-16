@@ -1,0 +1,49 @@
+package metotlar;
+
+import java.util.Scanner;
+
+public class MetotlarDevam2 {
+	public static String ad;
+	public static void merhaba(String ad) {
+		System.out.println("Merhaba "+ ad);
+	}
+	public int max(int x, int y,int z) {
+		if(x>y & x>z) 
+			return x;
+		else if (y>x & y>z)
+			return y;
+		else
+			return z;
+		}
+	public double max2(double x, double y,double z) {
+		if(x>y & x>z) 
+			return x;
+		else if (y>x & y>z)
+			return y;
+		else
+			return z;
+		}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("ad: ");
+		//ad değişkeni ve merhaba metodu static olduğu için nesne oluşturmadan erişilebildi.
+		ad=sc.nextLine();
+		MetotlarDevam2.merhaba(ad);
+		
+		MetotlarDevam2 m = new MetotlarDevam2();
+		double mak1 = m.max2(5.4,4.5, 2.3);
+		System.out.println(mak1);
+		
+		int mak2 = m.max(4, 3, 7);
+		System.out.println(mak2);
+		
+		
+		
+		
+		
+		
+	}
+
+}

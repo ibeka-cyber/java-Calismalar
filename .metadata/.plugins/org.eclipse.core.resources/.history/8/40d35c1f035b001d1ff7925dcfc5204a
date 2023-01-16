@@ -1,0 +1,17 @@
+import java.util.Date;
+
+public class whileDongusu {
+	public static void main(String[] args) throws InterruptedException {
+		int i=0;
+		/*while(i<10) {//while koşul doğru olduğu sürece çalışır. koşul yanlışsa bir kere bile çalışmaz.
+			System.out.println(i);
+			i++;
+		}*/
+		
+		while(true) {
+			System.out.println(new Date());
+			Thread.sleep(1000); //1 saniyede bir şu anki tarihi yazdıracak
+		}
+	}
+	
+}

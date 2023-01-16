@@ -1,0 +1,27 @@
+package metotlar;
+
+public class metotlar {
+	
+	public void Hello(){
+		System.out.println("Hello My Friend!");
+	}
+	public void Topla(int x,int y) {
+		int sonuc = x+y;
+		System.out.println("int Toplam sonucu: "+sonuc);
+	}
+	public void Topla(float x,int y) {
+		float sonuc = x+y;
+		System.out.println("int float Toplam sonucu: "+sonuc);
+	}
+	public void Topla(float x,float y) {
+		float sonuc = x+y;
+		System.out.println("float float Toplam sonucu: "+sonuc);
+	}
+	public static void main(String[] args) {
+	    new metotlar().Hello();
+	    new metotlar().Topla(5, 7);
+	    new metotlar().Topla(4.5f, 7);
+	    new metotlar().Topla(5f, 7f);
+	}
+
+}

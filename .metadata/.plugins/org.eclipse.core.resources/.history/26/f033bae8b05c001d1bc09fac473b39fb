@@ -1,0 +1,20 @@
+package metotlar;
+
+import java.util.Arrays;
+
+public class MetotParametreleri4 {
+	public static void main(String[] args) {
+		
+		Ogrenci m = new Ogrenci();
+		Ogrenci.isim="tuğrul";
+		Ogrenci.yas=8;
+		
+	}
+	public void ogrenciBilgileri(Ogrenci ogrenci) {
+		ogrenci.isim="tuğrul";
+		
+		System.out.println(ogrenci.isim);
+		System.out.println(ogrenci.yas);
+		
+	}
+}

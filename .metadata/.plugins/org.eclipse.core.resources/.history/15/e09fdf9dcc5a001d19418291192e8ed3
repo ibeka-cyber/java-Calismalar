@@ -1,0 +1,10 @@
+
+public class Enum {
+public static void main(String[] args) {
+		Aylar ay=Aylar.Ocak;
+		System.out.println(ay);
+		
+		ay=Aylar.Ekim;
+		System.out.println(ay);
+	}
+}

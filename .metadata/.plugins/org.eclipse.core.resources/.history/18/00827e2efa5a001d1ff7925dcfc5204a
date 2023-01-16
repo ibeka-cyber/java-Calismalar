@@ -1,0 +1,21 @@
+package ifade;
+
+import java.util.Scanner;
+
+public class Kosul {
+	static int yas;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("yaşınızı giriniz: ");
+		yas = sc.nextInt();
+
+		if (yas < 0) {
+			System.out.println("yaş negatif olamaz!");
+		} else if (yas < 18) {
+			System.out.println("Ehliyet alabilmek için 18 yaşını doldurmuş olmanız gerekmektedir!");
+		} else {
+			System.out.println("Ehliyet alabilirsiniz!");
+		}
+	}
+
+}

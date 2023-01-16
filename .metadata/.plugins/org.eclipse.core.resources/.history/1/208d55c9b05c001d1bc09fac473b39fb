@@ -1,0 +1,11 @@
+package metotlar;
+
+public class ogrenci {
+
+	public static void main(String[] args) {
+		String isim;
+		int yas;
+
+	}
+
+}

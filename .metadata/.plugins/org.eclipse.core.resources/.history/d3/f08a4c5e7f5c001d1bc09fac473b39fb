@@ -1,0 +1,18 @@
+package metotlar;
+
+import java.util.Scanner;
+
+public class MetotlarDevam {
+	public void merhaba(String ad) {
+		System.out.println("Merhaba"+ ad);
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		MetotlarDevam met = new MetotlarDevam();
+		System.out.println("Adınızı giriniz: ");
+		String ad=sc.nextLine();
+		met.merhaba(ad);
+		System.out.println("iki sayı giriniz: ");
+		
+	}
+}

@@ -1,0 +1,39 @@
+package metotlar;
+
+import java.util.Scanner;
+
+public class MetotlarDevam {
+	public void merhaba(String ad) {
+		System.out.println("Merhaba "+ ad);
+	}
+	public void topla(int x, int y) {
+		System.out.println("Toplam "+ (x+y));
+	}
+	public float cikar(float x, int y) {
+		float sonuc =(x+y);
+		return sonuc;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		MetotlarDevam met = new MetotlarDevam();
+		
+		System.out.print("Adınızı giriniz: ");
+		String ad = sc.nextLine();
+		met.merhaba(ad);
+		
+		//kullanıcıdan 2 sayı alarak toplama işlemi yaptırabiliriz.
+		System.out.print("iki sayı giriniz: ");
+		met.topla(sc.nextInt(),sc.nextInt());
+		
+		//birden çok şekilde yazılabilir
+		System.out.print("iki sayı giriniz: ");
+		met.topla(sc.nextInt(),sc.nextInt());
+		int a =sc.nextInt();
+		int b =sc.nextInt();
+		
+		float sonuc =met.cikar(a, b);
+		
+		
+		
+	}
+}

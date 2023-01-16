@@ -1,0 +1,95 @@
+package arrays;
+
+import java.util.Scanner;
+
+import java.util.Arrays;
+
+public class tek_boyutlu {
+	public static void main(String[] args) {
+		int[] number = new int[16];// 16 elemanlı bir int dizi üretir
+
+		System.out.println(Arrays.toString(number));// number dizisinin içeriğini yazdırarak görelim. number[5] = 32;
+													// System.out.println(number[5]);
+
+		int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		System.out.println(numbers[5]);
+		System.out.println(numbers.length);// dizi uzunluğunu verir.
+
+		String[] names = new String[10]; // 10 elemanlı bir string dizi üretir.
+		System.out.println(Arrays.toString(names));
+		names[2] = "Bahar";
+		System.out.println(Arrays.toString(names));
+		names[4] = "Hasan";
+		System.out.println(Arrays.toString(names)); // names[14]="Ece"; hata verir.çünkü 14. index yok. max 10
+		System.out.println("**************************************** ");
+		int[] n = new int[5];
+		n[0] = 5;
+		n[1] = 10;
+		n[2] = 15;
+		n[3] = 20;
+		n[4] = 25;
+		System.out.println("el ile: " + Arrays.toString(n)); // yukarıda elimiz ileverdiğimiz değerleri aşağıdaki gibi
+																// for döngüsüyle verebiliriz.
+		int a = 5;
+		for (int k = 0; k < n.length; k++) {
+			n[k] = a;
+			System.out.println(k + ".sayı: " + n[k]);
+			a += 5;
+
+		}
+		System.out.println("For ile: " + Arrays.toString(n));
+		System.out.println("dizi uzunluğu: " + n.length);
+		System.out.println("//////////////////////////////////////////// ");
+		// dizi uzunluğunu kullanıcıdan alalım
+/*
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Dizi uzunluğunu giriniz: ");
+		int length = scn.nextInt();
+
+		int[] n2 = new int[length];
+		for (int i = 0; i < n2.length; i++) {
+			System.out.print((i + 1) + ".sayı: ");
+			n2[i] = scn.nextInt();
+		}
+		System.out.println(Arrays.toString(n2));
+		int toplam = 0;
+		// aldığımız sayıların toplamını bulalım
+		for (int j = 0; j < n2.length; j++) {
+			toplam += n2[j];
+		}
+		System.out.println("Toplam: " + toplam);
+		double ortalama = (toplam / n2.length);
+		System.out.print("Ortalama: " + ortalama);
+		System.out.print("******************************************");
+
+		String[] n3 = new String[3];
+		n3[0] = "Bahar";
+		n3[1] = "kerem";
+		n3[2] = "Rıza";
+		//diziyi tersten yazdıralım
+		for (int y = n3.length - 1; y >= 0; y--) {
+			System.out.println(n3[y]);
+		}
+		*/
+		System.out.println("******************************************");
+		int[] numbers1= {1,2,3};
+		System.out.println(Arrays.toString(numbers1));
+		int[] numbers2= numbers1;
+		System.out.println("******************************************");
+		numbers1[0]=5;		//değişiklik ikisinde de olur. Çünkü numbers2 numbers1 in referansını tutuyordu. doğal olarak numbers1 de değişen şey 2 de de değişti.
+		System.out.println(Arrays.toString(numbers1));
+		System.out.println(Arrays.toString(numbers2));
+		numbers2=Arrays.copyOf(numbers1,3);
+		//Arrays.copyOfRange(numbers1, 0, 3);//bir başka kopyalama şekli
+		numbers1[0]=15;
+		System.out.println(Arrays.toString(numbers1));//değişim numbers1de oldu 2 de olmadı.çünkü numbers2 artık referans değil değer tutuyor.
+		System.out.println(Arrays.toString(numbers2));
+		System.out.println("******************************************");
+		//elimizde var olan bir arrayi bir sayıyla doldurmak istersek
+		Arrays.fill(numbers2, 45);
+		System.out.println(Arrays.toString(numbers2));
+		Arrays.sort(numbers2);
+		System.out.println(Arrays.toString(numbers2));
+	}
+
+}

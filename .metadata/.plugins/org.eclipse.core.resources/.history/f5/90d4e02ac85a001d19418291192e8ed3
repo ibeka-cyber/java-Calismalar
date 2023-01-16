@@ -1,0 +1,27 @@
+package staticDegiskenler;
+
+public class staticD {
+
+	static int ver;
+	static {
+		ver=5;
+	}
+	
+	
+	
+	
+	static int j =15; //başında static olmazsa main bu değişkene ulaşamaz.
+	int i =15;
+	public static void main(String[] args) {
+		staticD.j=18; //static olduğu için nesne oluşturmadan kullanabildik.
+		System.out.println("statik olan j: "+j); 
+		//veya 2. olarak bir nesne oluşturup i ye ulaşabiliriz.
+		staticD statik= new staticD();
+		statik.i=10;
+		System.out.println("statik olmayan i: "+statik.i); 
+		System.out.println("statik olmayan ver: "+ver); 
+		
+		
+	}
+
+}

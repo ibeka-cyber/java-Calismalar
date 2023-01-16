@@ -1,0 +1,19 @@
+package metotlar;
+
+import java.util.Arrays;
+
+public class MetotParametreleri3 {
+	public static void main(String[] args) {
+		
+
+		MetotParametreleri3 m = new MetotParametreleri3();
+		m.test(5);
+		
+	}
+
+	public void test(int x) {
+		x=10;
+		System.out.println(x);
+		
+	}
+}

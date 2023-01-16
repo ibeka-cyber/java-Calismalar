@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class StringBuffer {
+	public static void main(String[] args) {
+	//kullanıcıdan aldığımız ad soyadı StringBuffer kullanarak yazdıralım.
+	Scanner sc =new Scanner(System.in);
+	StringBuffer bf =new StringBuffer();
+	System.out.print("adınız: ");
+	bf.append("ad:");
+	bf.append(sc.nextLine());
+	System.out.print("soyadınız: ");
+	bf.append(" , Soyad:");
+	bf.append(sc.nextLine());
+	System.out.println(bf.toString());
+	}
+}

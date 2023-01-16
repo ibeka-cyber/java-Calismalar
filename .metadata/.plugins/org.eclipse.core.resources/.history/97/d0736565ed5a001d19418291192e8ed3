@@ -1,0 +1,14 @@
+
+public class Operatorler {
+	public static void main(String[] args) {
+		int a=5;
+		int b=7;
+		
+		System.out.println("toplam: "+(a+b));
+		System.out.println("çıkarma: "+(a-b));
+		System.out.println("Bölme:"+(a/b));
+		System.out.println("Çarpma: "+(a*b));
+		System.out.println("mod: "+(a%b));
+		
+	}
+}

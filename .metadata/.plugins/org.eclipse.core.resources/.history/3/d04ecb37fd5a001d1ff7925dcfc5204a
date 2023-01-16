@@ -1,0 +1,43 @@
+package ifade;
+
+import java.util.Scanner;
+
+public class Kosul {
+
+	public static void main(String[] args) {
+		int yas;
+		int number;
+		// ehliyet kontrolü
+		Scanner sc = new Scanner(System.in);
+		System.out.print("yaşınızı giriniz: ");
+		yas = sc.nextInt();
+
+		if (yas < 0) {
+			System.out.println("yaş negatif olamaz!");
+		} else if (yas < 18) {
+			System.out.println("Ehliyet alabilmek için 18 yaşını doldurmuş olmanız gerekmektedir!");
+		} else {
+			System.out.println("Ehliyet alabilirsiniz!");
+		}
+
+		// negatif pozitif tek çift sayı kontrolü
+		System.out.print("Bir sayı giriniz: ");
+		number = sc.nextInt();
+
+		if (number < 0) {
+			if (number % 2 == 0)
+				System.out.println("Negatif çift Sayı girdiniz!");
+			else {
+				System.out.println("Negatif tek Sayı girdiniz!");
+			}
+		} else {
+			if (number % 2 == 0) {
+				System.out.println("Pozitif çift Sayı girdiniz!");
+			} else {
+				System.out.println("Pozitif tek Sayı girdiniz!");
+
+			}
+		}
+	}
+
+}

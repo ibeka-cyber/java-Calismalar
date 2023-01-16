@@ -1,0 +1,12 @@
+package metotlar;
+
+public class MetotlarDevam {
+	public static void main(String[] args) {
+		HesapMakinesi m = new HesapMakinesi();
+		m.Cikar(7.8f, 5.3f);
+		m.Topla(6.7f, 9.6f);
+		m.Bol(250.5f, -5.4f);
+		m.Carp(6.7f, 1.2f);
+		m.Mod(3.2f, 2.1f);
+	}
+}
